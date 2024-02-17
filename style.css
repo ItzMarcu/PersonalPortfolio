@@ -38,12 +38,23 @@ img#git-logo {
     -webkit-filter: invert();
 }
 
-img#down-arrow {
+img#img-arrow {
     width: 30px;
     height: auto;
+}
+
+button#arrow {
+    border: none;
+    background-color: transparent;
     position: absolute;
     bottom: 3%;
     left: 30%;
+}
+
+button#arrow:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px #fff);
+    -webkit-filter: drop-shadow(0px 0px 3px #fff);
 }
 
 .main-page {
@@ -61,3 +72,7 @@ img#down-arrow {
     -o-transition: transform 0.5s ease-in-out;
 }
 
+h1, h2 {
+    filter: drop-shadow(0px 0px 1.5px #ffffff96);
+    -webkit-filter: drop-shadow(0px 0px 1.5px #fff);
+}

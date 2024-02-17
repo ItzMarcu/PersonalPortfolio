@@ -1,22 +1,18 @@
 
-const mainPage = document.getElementById('scrollable');
-        let isTop = true;
+let arrowButton = document.getElementById('arrow');
+let arrowPicture = document.getElementById('img-arrow')
+let scrollableContent = document.getElementById('scrollable');
+let isDown = false;
 
-mainPage.addEventListener('wheel', (event) => {
-    const direction = event.deltaY > 0 ? 1 : -1;
+function ChangeArrow () {
+    arrowPicture.src = 'images/up-arrow.png';
+}
 
-    // Verifica se la pagina è in cima e si sta scorrendo verso l'alto
-    if (isTop && direction === -1) {
-        event.preventDefault(); // Blocca lo scroll verso l'alto
-        return;
+arrowButton.addEventListener('click', function () {
+    if (isDown === true) {
+        ChangeArrow();
+    } else {
+        scrollableContent.scrollTop += 100;
+        isDown = true;
     }
-
-    // Calcola la nuova posizione
-    const newPosition = mainPage.scrollTop + direction * 50; // Regola il valore a tuo piacimento
-
-    // Imposta la nuova posizione
-    mainPage.scrollTop = newPosition;
-
-    // Aggiorna il flag isTop in base alla posizione
-    isTop = newPosition <= 0;
 });
