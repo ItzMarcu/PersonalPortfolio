@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    background-image: url("images/bg.png");
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    font-family: "Anta", sans-serif;
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+img#propic {
+    width: 170px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    filter: drop-shadow(0px 0px 3px #000);
+    -webkit-filter: drop-shadow(0px 0px 3px #000);
+}
+
+img#git-logo {
+    width: 30px;
+    height: auto;
+    filter: invert();
+    -webkit-filter: invert();
+}
+
+img#down-arrow {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7%;
+    top: 5%;
+    color: #CCE7F1;
+    font-family: "Anta", sans-serif;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
